@@ -1,0 +1,732 @@
+/* // Home page */
+/* 1: Body */
+/* 2: Bulbs */
+/* 3: Night market announcement with location */
+/* 4: Scroll */
+/* 5:  Gallery Prompt */
+/* 6:  Current Market Poster */
+/* 7:  Gallery */
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+
+
+/* // 1:________________________________________ */
+.intro{
+    position: absolute;
+    height: 350vh;
+    width: 100vw;
+    top: 100vh;
+    background: #161111;
+    justify-content: center;
+    align-items: center;
+/* // 2:________________________________________ */
+    #bulb {
+        position: absolute;
+        width: 100vw;
+        height: 101vh;
+        top: 60vh;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateY(-1vh);
+        }
+
+        10% {
+            transform: translateY(-2vh);
+        }
+
+        20% {
+            transform: translateY(-4vh);
+        }
+
+        30% {
+            transform: translateY(-6vh);
+        }
+
+        40% {
+            transform: translateY(-8vh);
+        }
+
+        50% {
+            transform: translateY(-10vh);
+        }
+
+        60% {
+            transform: translateY(-8vh);
+        }
+
+        70% {
+            transform: translateY(-6vh);
+        }
+
+        80% {
+            transform: translateY(-4vh);
+        }
+
+        90% {
+            transform: translateY(-2vh);
+        }
+
+        100% {
+            transform: translateY(-1vh);
+        }
+    }
+
+    @keyframes pendulum {
+        0% {
+            transform: rotateY(5deg);
+        }
+
+        25% {
+            transform: rotateY(-5deg)
+        }
+
+        /* 50% { transform: rotateY(-5deg);} */
+        75% {
+            transform: rotateY(5deg);
+        }
+
+        100% {
+            transform: rotateY(-5deg);
+        }
+    }
+
+    @keyframes move2 {
+        0% {
+            transform: translateY(-2vh);
+        }
+
+        10% {
+            transform: translateY(-4vh);
+        }
+
+        20% {
+            transform: translateY(-6vh);
+        }
+
+        30% {
+            transform: translateY(-8vh);
+        }
+
+        40% {
+            transform: translateY(-10vh);
+        }
+
+        50% {
+            transform: translateY(-12vh);
+        }
+
+        60% {
+            transform: translateY(-10vh);
+        }
+
+        70% {
+            transform: translateY(-8vh);
+        }
+
+        80% {
+            transform: translateY(-6vh);
+        }
+
+        90% {
+            transform: translateY(-4vh);
+        }
+
+        100% {
+            transform: translateY(-2vh);
+        }
+    }
+
+    @keyframes pendulum2 {
+        from {
+            transform: rotateY(-10deg);
+        }
+
+        to {
+            transform: rotateY(10deg);
+        }
+    }
+
+    #tungsten1 path {
+        animation: lighta 2s ease infinite, move 4s infinite;
+        ;
+    }
+
+    #glow1 path {
+        animation: glowa 2s ease infinite, move 4s infinite;
+    }
+
+    .bulb1,
+    .line1 {
+        animation: move 4s infinite;
+    }
+
+    @keyframes lighta {
+        0% {
+            fill: rgba(77, 202, 203, 1);
+        }
+
+        25% {
+            fill: #e3f300;
+        }
+
+        50% {
+            fill: #fdffdf;
+        }
+
+        75% {
+            fill: #e3f300;
+        }
+
+        100% {
+            fill: rgba(77, 202, 203, 1)
+        }
+    }
+
+    @keyframes glowa {
+        0% {
+            stroke: rgba(77, 202, 203, 1);
+            filter: url(#blur-filter)
+        }
+
+        25% {
+            stroke: #e3f300;
+            filter: url(#blur-filter);
+        }
+
+        50% {
+            filter: url(#blur-filter);
+            stroke: #fdffdf;
+        }
+
+        75% {
+            filter: url(#blur-filter);
+            stroke: #e3f300;
+        }
+
+        100% {
+            filter: url(#blur-filter);
+            stroke: rgba(77, 202, 203, 1)
+        }
+    }
+
+    #tungsten2 path {
+        animation: lightb 4s ease infinite, move 6s infinite;
+    }
+
+    #glow2 path {
+        animation: glowb 4s ease infinite, move 6s infinite;
+    }
+
+    .bulb2,
+    .line2 {
+        animation: move 6s infinite;
+    }
+
+    @keyframes glowb {
+        0% {
+            stroke: #2fe529;
+            filter: url(#blur-filter)
+        }
+
+        25% {
+            stroke: #ff0000;
+            filter: url(#blur-filter);
+        }
+
+        50% {
+            filter: url(#blur-filter);
+            stroke: rgba(77, 202, 203, 1);
+        }
+
+        75% {
+            filter: url(#blur-filter);
+            stroke: #ff0000;
+        }
+
+        100% {
+            filter: url(#blur-filter);
+            stroke: #2fe529
+        }
+    }
+
+    @keyframes lightb {
+        0% {
+            fill: #2fe529;
+        }
+
+        25% {
+            fill: #ff0000;
+        }
+
+        50% {
+            fill: rgba(77, 202, 203, 1);
+        }
+
+        75% {
+            fill: #ff0000;
+        }
+
+        100% {
+            fill: #2fe529
+        }
+    }
+
+    #tungsten3 path {
+        animation: lightc 5s ease infinite, pendulum2 6s infinite;
+    }
+
+    #glow3 path {
+        animation: glowc 5s ease infinite, pendulum2 6s infinite;
+    }
+
+    .bulb3,
+    .line3 {
+        animation: pendulum2 6s infinite;
+    }
+
+    @keyframes glowc {
+        0% {
+            stroke: #00FF33;
+            filter: url(#blur-filter)
+        }
+
+        25% {
+            stroke: #cc00ff;
+            filter: url(#blur-filter);
+        }
+
+        50% {
+            filter: url(#blur-filter);
+            stroke: #ffff1a;
+        }
+
+        75% {
+            filter: url(#blur-filter);
+            stroke: #cc00ff;
+        }
+
+        100% {
+            filter: url(#blur-filter);
+            stroke: #00FF33
+        }
+    }
+
+    @keyframes lightc {
+        0% {
+            fill: #00FF33;
+        }
+
+        25% {
+            fill: #cc00ff;
+        }
+
+        50% {
+            fill: #ffff1a;
+        }
+
+        75% {
+            fill: #cc00ff;
+        }
+
+        100% {
+            fill: #00FF33
+        }
+    }
+
+    #tungsten4 path {
+        animation: lightd 6s ease infinite, move2 3s infinite;
+    }
+
+    #glow4 path {
+        animation: glowd 6s ease infinite, move2 3s infinite;
+    }
+
+    .bulb4,
+    .line4 {
+        animation: move 3s infinite;
+    }
+
+    @keyframes glowd {
+        0% {
+            stroke: #00f3e0;
+            filter: url(#blur-filter)
+        }
+
+        25% {
+            stroke: #ff44f5;
+            filter: url(#blur-filter);
+        }
+
+        50% {
+            filter: url(#blur-filter);
+            stroke: #ff5507;
+        }
+
+        75% {
+            filter: url(#blur-filter);
+            stroke: #ff44f5;
+        }
+
+        100% {
+            filter: url(#blur-filter);
+            stroke: #00f3e0
+        }
+    }
+
+    @keyframes lightd {
+        0% {
+            fill: #00f3e0;
+        }
+
+        25% {
+            fill: #ff44f5;
+        }
+
+        50% {
+            fill: #ff5507;
+        }
+
+        75% {
+            fill: #ff44f5;
+        }
+
+        100% {
+            fill: #00f3e0
+        }
+    }
+
+    #tungsten5 path {
+        transform-origin: top;
+        animation: lighte 8s ease infinite, pendulum2 2s ease infinite;
+    }
+
+    #glow5 path {
+        transform-origin: top;
+        animation: glowe 8s ease infinite, pendulum2 2s ease infinite;
+    }
+
+    .bulb5,
+    .line5 {
+        transform-origin: top;
+        animation: pendulum2 2s ease infinite;
+    }
+
+    @keyframes glowe {
+        0% {
+            stroke: #ff0077;
+            filter: url(#blur-filter)
+        }
+
+        25% {
+            stroke: #08ff00;
+            filter: url(#blur-filter);
+        }
+
+        50% {
+            filter: url(#blur-filter);
+            stroke: #00f3e0;
+        }
+
+        75% {
+            filter: url(#blur-filter);
+            stroke: #08ff00;
+        }
+
+        100% {
+            filter: url(#blur-filter);
+            stroke: #ff0077
+        }
+    }
+
+    @keyframes lighte {
+        0% {
+            fill: #ff0077;
+        }
+
+        25% {
+            fill: #08ff00;
+        }
+
+        50% {
+            fill: #00f3e0;
+        }
+
+        75% {
+            fill: #08ff00;
+        }
+
+        100% {
+            fill: #ff0077
+        }
+    }
+
+    /* // 3:________________________________________ */
+    .heading {
+        font-size: 7vh;
+        text-decoration: underline;
+        text-decoration-color: white;
+        margin-bottom: 3px;
+    }
+
+    .announcement {
+        position: absolute;
+        width: 90vw;
+        padding-top: 0.2em;
+        height: 60vh;
+        top: 5vh;
+        background-color: #161111;
+        left: 5vw;
+        font-family: 'Amatic SC', cursive;
+        font-stretch: expanded;
+        color: rgba(0, 243, 223, 1);
+        font-size: 6vh;
+        text-align: center;
+        border: 10px solid;
+        border-color: #FFF;
+        border-radius: 50px;
+        overflow: hidden;
+        box-shadow: 2px 12px 144px -33px rgba(0, 243, 223, 1);
+    }
+
+    .announcement:hover {
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px rgba(0, 243, 223, 1), 0 0 30px rgba(0, 243, 223, 1), 0 0 40px rgba(0, 243, 223, 1), 0 0 55px rgba(0, 243, 223, 1), 0 0 75px rgba(0, 243, 223, 1), -40px -6px 6px rgba(0, 243, 223, 0);
+        transition: 1s ease;
+    }
+
+    .locationFetch {
+        height: 7vh;
+        width: 7vh;
+        animation: jumping 0.8s ease-out infinite;
+    }
+
+    .locationFetch:hover {
+        cursor: pointer;
+        transform: rotate(3deg);
+    }
+
+    @keyframes jumping {
+        0% {
+            transform: translateY(0px);
+        }
+
+        20% {
+            transform: translateY(4px);
+        }
+
+        40% {
+            transform: translateY(8px);
+        }
+
+        60% {
+            transform: translateY(12px);
+        }
+
+        80% {
+            transform: translateY(6px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+
+    }
+
+    /* // 4:________________________________________ */
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        /* Remove scrollbar space */
+        background: transparent;
+    }
+
+
+    /* // 5:________________________________________ */
+    
+    .question {
+        width: 100vw;
+        top: 250vh;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .question a {
+        font-family: 'Amatic SC', cursive;
+        font-stretch: expanded;
+        color: white;
+        font-size: 8vh;
+        text-decoration-line: overline;
+        text-decoration-color: #00f3e0;
+    }
+    
+    /* // 6:________________________________________ */
+
+    .currentMarket{
+        height: 100vh;
+        top: 140vh;
+        position: absolute;
+        align-items: center;
+        .blueBar{
+            background: $drBlueL;
+            height: 50vh;
+            top: 17vh;
+            left: -50vw;
+            position: absolute;
+            width: 200vw;
+            transform: rotate(-19deg);
+            z-index: 3;
+        }
+        .poster{
+            width: 90vw;
+            border: 10px solid $drBlueL;
+            background-image: url('../gallery/poster.png');
+            background-position: center;
+            background-size: cover;
+            height: 80vh;
+            z-index: 4;
+            position: relative;
+        }
+    }
+}
+/* // 7:________________________________________ */
+.gallery {
+    display: grid;
+    width: 105%;
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+}
+
+.item {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    background-position: center;
+    background-size: cover;
+}
+
+.item.v2 {
+    grid-row: span 2;
+}
+
+.item.v3 {
+    grid-row: span 3;
+}
+
+.item.v4 {
+    grid-row: span 4;
+}
+
+.item.h2 {
+    grid-column: span 2;
+}
+
+.item.h3 {
+    grid-column: span 3;
+}
+
+.item.h4 {
+    grid-column: span 4;
+}
+
+
+.close {
+    background: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-bottom: 2px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    z-index: 2;
+    align-items: center;
+    justify-items: center;
+    background: rgba(255, 255, 255, 0.479);
+}
+
+.item img {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item__overlay {
+    background: rgba(66, 196, 211, 0.5);
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    transform: translateY(-100%);
+}
+
+.item__overlay button {
+    background: none;
+    border-radius: 50px;
+    border: 2px solid whitesmoke;
+    color: azure;
+    text-transform: capitalize;
+}
+
+button:hover {
+    background: white;
+    color: #19D8FF;
+    transition: 0.5s ease;
+    border: 2px solid #19D8FF;
+    transform: scale(1.3);
+}
+
+.item:hover .item__overlay {
+    transform: translateY(0);
+    transition: 0.5s ease;
+}
+
+.overlay.open {
+    display: grid;
+}
+
+.overlay-inner {
+    background: #19D8FF;
+    width: 40vw;
+    height: 40vw;
+    padding: 40px;
+}
+
+.overlay img {
+    width: 100%;
+}
+
+.banner {
+    width: 90vw;
+    height: 80vh;
+    top: 270vh;
+    left: 5vw;
+    position: absolute;
+    overflow-x: hidden;
+    border-radius: 50px;
+    border: 10px solid white;
+}
+
+.banner::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: rgb(4, 124, 24);
+}
+
+.banner::-moz-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: rgb(4, 124, 24);
+}
