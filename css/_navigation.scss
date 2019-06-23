@@ -1,0 +1,86 @@
+/* Index: */
+
+/* 1 : Navigation */
+
+.navbutton {
+    top: 45%;
+    left: 20px;
+    z-index: 5;
+    position: fixed;
+    color: rgb(77, 202, 203);
+}
+
+.option {
+    margin-left: 35%;
+    left: 20%;
+    height: 10vh;
+    border-radius: 50px;
+    color: rgba(0, 0, 0, 0);
+    flex: 1;
+}
+
+.option img {
+    background-color: rgba(77, 202, 203, 1);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    top: 10%;
+}
+
+
+.sidenav {
+    height: 90vh;
+    width: 0;
+    position: fixed;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: 0.5s;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 10;
+}
+
+.sidenav a {
+    font-size: 4vh;
+    width: 100%;
+    transition: 0.3s;
+    font-family: 'Amatic SC', cursive;
+}
+
+.sidenav a:hover {
+    flex: 2;
+    color: rgb(239, 225, 201);
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.sidenav a:hover>img {
+    background-color: rgb(239, 225, 201);
+    transition: 0.2s linear;
+}
+
+.closebtn {
+    position: absolute;
+    color: rgba(77, 202, 203, 1);
+    left: 25px;
+    height: 10px;
+    width: 10px;
+    z-index: 5;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}

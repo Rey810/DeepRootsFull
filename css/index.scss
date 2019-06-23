@@ -1,6 +1,30 @@
 // Index
 
 // 1: Linking stylesheets, Importing Fonts//
+// 2: Body
+// 3: Landing
+// 4: Navigation
 // ________________1____________________
 
 @import "./variables";
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Sofia');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+// ________________2____________________
+
+body{ 
+    height: 1400vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background: $drBlack;
+}
+
+// ________________3____________________
+
+@import "./landing";
+.landing {
+    font-family: 'Amatic SC', cursive !important;
+}
+
+// ________________4____________________
+
+@import "./navigation";
