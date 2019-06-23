@@ -16,7 +16,6 @@
     height: 350vh;
     width: 100vw;
     top: 100vh;
-    background: #161111;
     justify-content: center;
     align-items: center;
 /* // 2:________________________________________ */
@@ -566,7 +565,10 @@
         height: 100vh;
         top: 140vh;
         position: absolute;
+        align-content: center;
         align-items: center;
+        justify-content: center;
+        text-align: center;
         .blueBar{
             background: $drBlueL;
             height: 50vh;
@@ -578,14 +580,14 @@
             z-index: 3;
         }
         .poster{
-            width: 90vw;
             border: 10px solid $drBlueL;
+            width: 90vw;
             background-image: url('../gallery/poster.png');
             background-position: center;
-            background-size: cover;
             height: 80vh;
             z-index: 4;
             position: relative;
+            background-size: cover;
         }
     }
 }
