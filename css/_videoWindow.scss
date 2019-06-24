@@ -1,0 +1,45 @@
+#videoWindow {
+    top: 460vh;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100vh;
+    border: none;
+}
+
+.videoContent {
+    position: absolute;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    left: 5vw;
+    top: 460vh;
+    height: 20px;
+    font-family: 'Amatic SC', cursive;
+    h1{
+        font-weight: bolder;
+        font-size: 7em;
+        opacity: 0.8;
+        color: $drBlueL;
+    }
+    p{
+        text-decoration: overline $drBlueL;
+        font-size: 5em;
+    }
+    #videoBtn {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 3em;
+        border: 3px solid $drBlueL;
+        background: none;
+        color: $drBlueL;
+        cursor: pointer;
+        bottom: 0;
+        right: 20px;
+        &:hover{
+            background: $drBlueL;
+            color: $drWhite;
+            transition: 0.1s linear;
+        }
+    }
+}

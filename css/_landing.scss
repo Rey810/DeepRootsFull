@@ -25,8 +25,7 @@
 .landing {
     #bulb {
         position: absolute;
-        background-color: #161111;
-        z-index: -1;
+        background: none;
     }
 
     .landingbulb1 path {
@@ -123,26 +122,26 @@
     @keyframes landingglowa {
         0% {
             stroke: rgba(77, 202, 203, 1);
-            filter: url(#blur-filter)
+            filter: url(#blur-filter-landing)
         }
 
         25% {
             stroke: #e3f300;
-            filter: url(#blur-filter);
+            filter: url(#blur-filter-landing);
         }
 
         50% {
-            filter: url(#blur-filter);
+            filter: url(#blur-filter-landing);
             stroke: #fdffdf;
         }
 
         75% {
-            filter: url(#blur-filter);
+            filter: url(#blur-filter-landing);
             stroke: #e3f300;
         }
 
         100% {
-            filter: url(#blur-filter);
+            filter: url(#blur-filter-landing);
             stroke: rgba(77, 202, 203, 1)
         }
     }
@@ -172,26 +171,26 @@
     @keyframes landingglowb {
         0% {
             stroke: #F44336;
-            filter: url(#blur-filter)
+            filter: url(#blur-filter-landing)
         }
 
         25% {
             stroke: #BA68C8;
-            filter: url(#blur-filter);
+            filter: url(#blur-filter-landing);
         }
 
         50% {
-            filter: url(#blur-filter);
+            filter: url(#blur-filter-landing);
             stroke: rgba(77, 202, 203, 1);
         }
 
         75% {
-            filter: url(#blur-filter);
+            filter: url(#blur-filter-landing);
             stroke: #BA68C8;
         }
 
         100% {
-            filter: url(#blur-filter);
+            filter: url(#blur-filter-landing);
             stroke: #F44336
         }
     }
@@ -221,26 +220,26 @@
     @keyframes landingglowc {
         0% {
             stroke: #00FF33;
-            filter: url(#blur-filter)
+            filter: url(#blur-filter-landing)
         }
 
         25% {
             stroke: rgba(77, 202, 203, 1);
-            filter: url(#blur-filter);
+            filter: url(#blur-filter-landing);
         }
 
         50% {
-            filter: url(#blur-filter);
+            filter: url(#blur-filter-landing);
             stroke: #9C27B0;
         }
 
         75% {
-            filter: url(#blur-filter);
+            filter: url(#blur-filter-landing);
             stroke: rgba(77, 202, 203, 1);
         }
 
         100% {
-            filter: url(#blur-filter);
+            filter: url(#blur-filter-landing);
             stroke: #00FF33
         }
     }

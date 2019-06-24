@@ -1,0 +1,127 @@
+// Tree Window (Display of deep roots Tree)
+
+.treeWindow {
+    top: 570vh;
+    position: absolute;
+    width: 100vw;
+    height: 200vh;
+}
+
+/* Index: */
+
+/* 1 : Body and Tree */
+/* 2: Text "Roots" */
+/* 3: Scroll down arrow */
+/* 4: Origin */
+/* 5: Current activites */
+/* 6: Social  */
+/* 7:  */
+
+/* // 1:________________________________________ */
+
+#tree {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    display: block;
+    transform: scale(0.6);
+    top: -30vh;
+}
+
+
+
+
+@keyframes treeBrighten {
+    0% {
+        fill: #161111;
+    }
+
+    50% {
+        fill: rgba(77, 202, 203, 0.8);
+    }
+
+    100% {
+        fill: #161111;
+    }
+}
+
+/* @keyframes treeBrighten {
+  0%  {fill: #E9EEEE;}
+  10% {fill: #72B133;}
+  20% {fill: #33B1B1;}
+  30% {fill: #7233B1;}
+  40% {fill: rgba(77, 202, 203, 1));}
+  50% {fill: rgba(77, 202, 203, 1));}
+  60% {fill: rgba(77, 202, 203, 1));}
+  70% {fill: #7233B1;}
+  80% {fill: #33B1B1;}
+  90% {fill: #72B133;}
+  100% {fill: #E9EEEE;}
+} */
+
+@keyframes treeBrighten2 {
+    0% {
+        stroke: #19D8FF;
+        stroke-dashoffset: 1;
+        stroke-width: 5;
+    }
+
+    10% {
+        stroke: #8D4ECC;
+    }
+
+    20% {
+        stroke: #CC4E4E;
+    }
+
+    30% {
+        stroke: #8DCC4E;
+    }
+
+    40% {
+        stroke: rgba(77, 202, 203, 1);
+    }
+
+    50% {
+        stroke: rgba(77, 202, 203, 1);
+    }
+
+    60% {
+        stroke: rgba(77, 202, 203, 1);
+    }
+
+    70% {
+        stroke: #8DCC4E;
+    }
+
+    80% {
+        stroke: #CC4E4E;
+    }
+
+    90% {
+        stroke: #8D4ECC;
+    }
+
+    100% {
+        stroke: #19D8FF;
+        stroke-dashoffset: 40000;
+        stroke-width: 5;
+    }
+}
+
+
+#treelayer101,
+#treelayer102,
+#treelayer103,
+#treelayer104 {
+    /* animation: treeBrighten2 10s ease-in-out infinite, dash 10s linear infinite; */
+    stroke-dasharray: 5000;
+    animation: treeBrighten2 20s ease-out infinite, treeBrighten 10s ease-out infinite;
+}
+
+/* #treeLayer105 {
+  animation: treeBrighten 20s ease-in-out infinite;
+} */
+
+
+/* // 2:________________________________________ */

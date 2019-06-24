@@ -1,9 +1,13 @@
 // Index
 
 // 1: Linking stylesheets, Importing Fonts//
-// 2: Body
+// 2: Body and Canvas
 // 3: Landing
 // 4: Navigation
+// 5: Intro (Inlcudes Market Banner, Gallery, Announcement)
+// 6: Scroll down arrows in corner
+// 7: Video player
+// 8: Tree Window
 // ________________1____________________
 
 @import "./variables";
@@ -15,8 +19,14 @@ body{
     height: 1400vh;
     width: 100vw;
     overflow-x: hidden;
+}
+#canvasballs{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
     background: $drBlack;
 }
+
 
 // ________________3____________________
 
@@ -36,4 +46,13 @@ body{
 // ________________6____________________
 
 @import "./scrolldowndude";
+
+// ________________7____________________
+
+@import "./videoWindow";
+
+// ________________8____________________
+
+@import "./treeWindow";
+
 
