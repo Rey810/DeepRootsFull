@@ -1,0 +1,31 @@
+// Involved Window
+
+// 1: Setting up window
+// 2: Involved Bar
+// ____________1____________
+
+#involvedWindow{
+    top: 970vh;
+    position: absolute;
+    height: 100vh;
+
+    // ___________2__________
+    #involvedBar{
+        height: 20vh;
+        background: $drBlueL;
+        font-size: 6em;
+        line-height: 20vh;
+        font-weight: 400;
+        color: $drBlack;
+    }
+    
+    // ___________3__________
+
+    #involvedText{
+        font-size: 4.5vh;
+        text-align: center;
+        color: $drWhite;
+        letter-spacing: 0.1em;
+        top: 10vh;
+    }
+}

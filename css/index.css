@@ -2268,4 +2268,27 @@ button:hover {
   text-align: center;
   line-height: 8vh;
 }
+
+#involvedWindow {
+  top: 970vh;
+  position: absolute;
+  height: 100vh;
+}
+
+#involvedWindow #involvedBar {
+  height: 20vh;
+  background: #00f3e0;
+  font-size: 6em;
+  line-height: 20vh;
+  font-weight: 400;
+  color: #161111;
+}
+
+#involvedWindow #involvedText {
+  font-size: 4.5vh;
+  text-align: center;
+  color: #fdffdf;
+  letter-spacing: 0.1em;
+  top: 10vh;
+}
 /*# sourceMappingURL=index.css.map */
