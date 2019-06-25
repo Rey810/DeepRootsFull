@@ -1,7 +1,7 @@
 // Tree Window (Display of deep roots Tree)
 
 .treeWindow {
-    top: 570vh;
+    top: 580vh;
     position: absolute;
     width: 100vw;
     height: 200vh;
@@ -19,9 +19,8 @@
     width: 100vw;
     height: auto;
     position: absolute;
-    display: block;
     transform: scale(0.6);
-    top: -30vh;
+    bottom: -30vh;
 }
 
 
@@ -125,7 +124,7 @@
 #drCollective{
     height: 20vh;
     top: 10vh;
-    position: relative;
+    position: absolute;
     font-size: 6em;
     letter-spacing: 1rem;
     font-family: 'Amatic SC',cursive;
@@ -140,7 +139,7 @@
 #drRoots{
     height: 20vh;
     top: 180vh;
-    position: relative;
+    position: absolute;
     font-size: 6em;
     letter-spacing: 1rem;
     font-family: 'Amatic SC',cursive;

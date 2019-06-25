@@ -2020,7 +2020,7 @@ button:hover {
 }
 
 .treeWindow {
-  top: 570vh;
+  top: 580vh;
   position: absolute;
   width: 100vw;
   height: 200vh;
@@ -2034,10 +2034,9 @@ button:hover {
   width: 100vw;
   height: auto;
   position: absolute;
-  display: block;
   -webkit-transform: scale(0.6);
           transform: scale(0.6);
-  top: -30vh;
+  bottom: -30vh;
 }
 
 @-webkit-keyframes treeBrighten {
@@ -2173,7 +2172,7 @@ button:hover {
 #drCollective {
   height: 20vh;
   top: 10vh;
-  position: relative;
+  position: absolute;
   font-size: 6em;
   letter-spacing: 1rem;
   font-family: 'Amatic SC',cursive;
@@ -2188,7 +2187,7 @@ button:hover {
 #drRoots {
   height: 20vh;
   top: 180vh;
-  position: relative;
+  position: absolute;
   font-size: 6em;
   letter-spacing: 1rem;
   font-family: 'Amatic SC',cursive;
