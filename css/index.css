@@ -5,13 +5,14 @@ body {
   height: 1400vh;
   width: 100vw;
   overflow-x: hidden;
+  font-family: 'Amatic SC', cursive !important;
 }
 
 #canvasballs {
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
+  height: 100%;
+  position: fixed !important;
   background: #161111;
+  overflow-x: hidden;
 }
 
 #logo {
@@ -1971,6 +1972,7 @@ button:hover {
   min-width: 100%;
   min-height: 100vh;
   border: none;
+  overflow-x: hidden;
 }
 
 .videoContent {
@@ -2026,12 +2028,7 @@ button:hover {
 
 /* Index: */
 /* 1 : Body and Tree */
-/* 2: Text "Roots" */
-/* 3: Scroll down arrow */
-/* 4: Origin */
-/* 5: Current activites */
-/* 6: Social  */
-/* 7:  */
+/* 2: Deep Roots Collective */
 /* // 1:________________________________________ */
 #tree {
   width: 100vw;
@@ -2173,4 +2170,102 @@ button:hover {
   animation: treeBrighten 20s ease-in-out infinite;
 } */
 /* // 2:________________________________________ */
+#drCollective {
+  height: 20vh;
+  top: 10vh;
+  position: relative;
+  font-size: 6em;
+  letter-spacing: 1rem;
+  font-family: 'Amatic SC',cursive;
+  color: #fdffdf;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #00f3e0;
+          text-decoration-color: #00f3e0;
+  font-weight: 500;
+}
+
+/* // 2:________________________________________ */
+#drRoots {
+  height: 20vh;
+  top: 180vh;
+  position: relative;
+  font-size: 6em;
+  letter-spacing: 1rem;
+  font-family: 'Amatic SC',cursive;
+  color: #fdffdf;
+  text-decoration: overline;
+  -webkit-text-decoration-color: #00f3e0;
+          text-decoration-color: #00f3e0;
+  font-weight: 500;
+}
+
+#aboutWindow {
+  top: 770vh;
+  position: absolute;
+  height: 200vh;
+  font-size: 10px;
+}
+
+#aboutWindow #bluePicBar {
+  height: 30vh;
+  background: #00f3e0;
+  width: 200vw;
+  position: relative;
+  -webkit-transform: rotate(22deg);
+          transform: rotate(22deg);
+  left: -50vw;
+  top: 80vh;
+}
+
+#aboutWindow #about2 #blueCircle {
+  height: 50vh;
+  background: #00f3e0;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  background-image: url("../images/shed.jpg");
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+}
+
+#aboutWindow #about2 #origin {
+  font-family: 'Amatic SC', cursive;
+  font-size: 4.5vh;
+  color: #fdffdf;
+  text-align: center;
+  letter-spacing: 1px;
+  height: 60vh;
+}
+
+#aboutWindow #about3 {
+  top: 10vh;
+  position: relative;
+  text-align: center;
+}
+
+#aboutWindow #about3 a {
+  font-size: 6em;
+  color: #161111;
+  line-height: 20vh;
+}
+
+#aboutWindow #about3 #blueSupportBar {
+  background: #00f3e0;
+  height: 20vh;
+  position: absolute;
+  left: -25vw;
+  text-align: right;
+  line-height: 20vh;
+}
+
+#aboutWindow #about3 #whatWeDo {
+  top: 25vh;
+}
+
+#aboutWindow #about3 #whatWeDo a {
+  font-size: 4.5vh;
+  color: #fdffdf;
+  text-align: center;
+  line-height: 8vh;
+}
 /*# sourceMappingURL=index.css.map */

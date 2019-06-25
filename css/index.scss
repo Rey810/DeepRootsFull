@@ -19,12 +19,13 @@ body{
     height: 1400vh;
     width: 100vw;
     overflow-x: hidden;
+    font-family: 'Amatic SC', cursive !important;
 }
 #canvasballs{
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
+    height: 100%;
+    position: fixed !important;
     background: $drBlack;
+    overflow-x: hidden;
 }
 
 
@@ -54,5 +55,10 @@ body{
 // ________________8____________________
 
 @import "./treeWindow";
+
+// ________________9____________________
+
+@import "./aboutWindow";
+
 
 

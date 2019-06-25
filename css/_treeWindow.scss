@@ -10,12 +10,8 @@
 /* Index: */
 
 /* 1 : Body and Tree */
-/* 2: Text "Roots" */
-/* 3: Scroll down arrow */
-/* 4: Origin */
-/* 5: Current activites */
-/* 6: Social  */
-/* 7:  */
+/* 2: Deep Roots Collective */
+
 
 /* // 1:________________________________________ */
 
@@ -125,3 +121,31 @@
 
 
 /* // 2:________________________________________ */
+
+#drCollective{
+    height: 20vh;
+    top: 10vh;
+    position: relative;
+    font-size: 6em;
+    letter-spacing: 1rem;
+    font-family: 'Amatic SC',cursive;
+    color: $drWhite;
+    text-decoration: underline;
+    text-decoration-color: $drBlueL;
+    font-weight: 500;
+}
+
+/* // 2:________________________________________ */
+
+#drRoots{
+    height: 20vh;
+    top: 180vh;
+    position: relative;
+    font-size: 6em;
+    letter-spacing: 1rem;
+    font-family: 'Amatic SC',cursive;
+    color: $drWhite;
+    text-decoration: overline;
+    text-decoration-color: $drBlueL;
+    font-weight: 500;    
+}

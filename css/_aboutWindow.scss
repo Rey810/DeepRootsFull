@@ -1,0 +1,84 @@
+// About window CSS
+
+// 1: About window setup
+
+// _____________1_____________
+
+#aboutWindow{
+    top: 770vh;
+    position: absolute;
+    height: 200vh;
+    font-size: 10px;
+    // background: green;
+    // opacity: 0.3;
+    
+    // _____________2_____________
+
+    #bluePicBar{
+        height: 30vh;
+        background: $drBlueL;
+        width: 200vw;
+        position: relative;
+        transform: rotate(22deg);
+        left: -50vw;
+        top: 80vh;
+    }
+
+    #about2{
+
+        #blueCircle {
+            height: 50vh;
+            background: $drBlueL;
+            clip-path: circle();
+            background-image: url('../images/shed.jpg');
+            background-size: contain;
+            background-position: center;
+            border-radius: 50%;
+        }
+
+        #origin {
+            font-family: 'Amatic SC', cursive;
+            font-size: 4.5vh;
+            color: $drWhite;
+            text-align: center;
+            letter-spacing: 1px;
+            height: 60vh;
+        }
+    }
+
+    #about3{
+        top: 10vh;
+        position: relative;
+        text-align: center;
+        a {
+            font-size: 6em;
+            color: $drBlack;
+            line-height: 20vh;
+        }
+        #blueSupportBar {
+            background: $drBlueL;
+            height: 20vh;
+            position: absolute;
+            left: -25vw;
+            text-align: right;
+            line-height: 20vh;
+
+        }
+
+        #whatWeDo{
+            top: 25vh;
+            a{
+            font-size: 4.5vh;
+            color: $drWhite;
+            text-align: center;
+            line-height: 8vh;
+            }
+        }
+    }
+
+    
+
+    
+}
+
+
