@@ -35,13 +35,12 @@ body {
 /* 3:________________________________________  */
 .landing {
   /* 4:________________________________________  */
-  /* #bcebeb */
-  /* 5:________________________________________  */
 }
 
 .landing #bulb {
   position: absolute;
   background: none;
+  top: -3px;
 }
 
 .landing .landingbulb1 path {
@@ -522,7 +521,7 @@ body {
           animation: landinglightc 6s ease infinite, landingmove 5s infinite;
 }
 
-.landing #layer106 {
+#logolayer106 {
   -webkit-transform: translate(-220px, -280px);
           transform: translate(-220px, -280px);
   z-index: -1;
@@ -570,29 +569,31 @@ body {
   }
 }
 
-.landing #logo:hover > #layer104,
-.landing #logo:hover > #layer106 {
+/* #bcebeb */
+#logo:hover > #layer104,
+#logo:hover > #logolayer106 {
   -webkit-animation: brighten 4s ease-in-out;
           animation: brighten 4s ease-in-out;
 }
 
-.landing #logo:hover > #layer101 {
+#logo:hover > #layer101 {
   -webkit-transform-origin: 1250px 1200px;
           transform-origin: 1250px 1200px;
   -webkit-animation: rotationIn 4s;
           animation: rotationIn 4s;
 }
 
-.landing #layer101 {
+#layer101 {
   z-index: 1;
 }
 
-.landing #logo:hover + #text {
+/* 5:________________________________________  */
+#logo:hover + #text {
   -webkit-animation: animate 4s linear;
           animation: animate 4s linear;
 }
 
-.landing #text {
+#text {
   position: absolute;
   padding-top: 20px;
   top: 65%;
@@ -627,11 +628,11 @@ body {
   }
 }
 
-.landing #layer106 {
+#logolayer106 {
   z-index: -2;
 }
 
-.landing #layer101 {
+#layer101 {
   z-index: 1;
 }
 
@@ -758,10 +759,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* // 2:________________________________________ */
 }
 
-.intro #bulb {
+/* // 2:________________________________________ */
+#bulb {
   position: absolute;
   width: 100vw;
   height: 101vh;
@@ -2354,7 +2355,7 @@ button:hover {
   margin-left: 0;
 }
 
-#landingMobile #logo #layer106 {
+#landingMobile #logo #logolayer106 {
   -webkit-transform: translate(-220px, -280px);
           transform: translate(-220px, -280px);
   z-index: -1;
@@ -2362,7 +2363,16 @@ button:hover {
 
 #landingMobile #bulb {
   height: 30vh;
-  margin-left: 0;
-  top: -10px;
+  top: -25px;
+}
+
+#landingMobile #textLogo {
+  position: absolute;
+  bottom: 20vh;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+  letter-spacing: 4px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=index.css.map */

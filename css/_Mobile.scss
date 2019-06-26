@@ -14,14 +14,22 @@
         width: 200px;
         height: 250px;   
         margin-left: 0;
-        #layer106 {
+        #logolayer106 {
         transform: translate(-220px, -280px);
         z-index: -1;
         }
     }
     #bulb{
         height: 30vh;
-        margin-left: 0;
-        top: -10px;
+        top: -25px;
+    }
+    #textLogo {
+    position: absolute;
+    bottom: 20vh;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    letter-spacing: 4px;
+    font-weight: bold;
     }
 }
