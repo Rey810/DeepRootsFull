@@ -1,0 +1,27 @@
+// Mobile display index
+
+// 1: Landing
+
+// ---------1--------------
+
+#landingMobile{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: 1;
+    position: absolute;
+    #logo{
+        width: 200px;
+        height: 250px;   
+        margin-left: 0;
+        #layer106 {
+        transform: translate(-220px, -280px);
+        z-index: -1;
+        }
+    }
+    #bulb{
+        height: 30vh;
+        margin-left: 0;
+        top: -10px;
+    }
+}

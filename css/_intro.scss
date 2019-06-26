@@ -25,7 +25,7 @@
         height: 101vh;
         top: 60vh;
     }
-
+}
     @keyframes move {
         0% {
             transform: translateY(-1vh);
@@ -593,7 +593,7 @@
             background-repeat: no-repeat;
         }
     }
-}
+
 /* // 7:________________________________________ */
 .gallery {
     display: grid;

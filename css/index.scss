@@ -8,6 +8,10 @@
 // 6: Scroll down arrows in corner
 // 7: Video player
 // 8: Tree Window
+// 9: About Window
+// 10: Involved? Window
+// 11: Contact Window
+// 12: Mobile Window
 // ________________1____________________
 
 @import "./variables";
@@ -71,5 +75,8 @@ body{
 // ________________11____________________
 
 @import "./contactWindow";
+// ________________12____________________
+
+@import "./Mobile";
 
 

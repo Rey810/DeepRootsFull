@@ -759,10 +759,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   /* // 2:________________________________________ */
-  /* // 3:________________________________________ */
-  /* // 4:________________________________________ */
-  /* // 5:________________________________________ */
-  /* // 6:________________________________________ */
 }
 
 .intro #bulb {
@@ -1002,18 +998,18 @@ body {
   }
 }
 
-.intro #tungsten1 path {
+#tungsten1 path {
   -webkit-animation: lighta 2s ease infinite, move 4s infinite;
           animation: lighta 2s ease infinite, move 4s infinite;
 }
 
-.intro #glow1 path {
+#glow1 path {
   -webkit-animation: glowa 2s ease infinite, move 4s infinite;
           animation: glowa 2s ease infinite, move 4s infinite;
 }
 
-.intro .bulb1,
-.intro .line1 {
+.bulb1,
+.line1 {
   -webkit-animation: move 4s infinite;
           animation: move 4s infinite;
 }
@@ -1110,18 +1106,18 @@ body {
   }
 }
 
-.intro #tungsten2 path {
+#tungsten2 path {
   -webkit-animation: lightb 4s ease infinite, move 6s infinite;
           animation: lightb 4s ease infinite, move 6s infinite;
 }
 
-.intro #glow2 path {
+#glow2 path {
   -webkit-animation: glowb 4s ease infinite, move 6s infinite;
           animation: glowb 4s ease infinite, move 6s infinite;
 }
 
-.intro .bulb2,
-.intro .line2 {
+.bulb2,
+.line2 {
   -webkit-animation: move 6s infinite;
           animation: move 6s infinite;
 }
@@ -1218,18 +1214,18 @@ body {
   }
 }
 
-.intro #tungsten3 path {
+#tungsten3 path {
   -webkit-animation: lightc 5s ease infinite, pendulum2 6s infinite;
           animation: lightc 5s ease infinite, pendulum2 6s infinite;
 }
 
-.intro #glow3 path {
+#glow3 path {
   -webkit-animation: glowc 5s ease infinite, pendulum2 6s infinite;
           animation: glowc 5s ease infinite, pendulum2 6s infinite;
 }
 
-.intro .bulb3,
-.intro .line3 {
+.bulb3,
+.line3 {
   -webkit-animation: pendulum2 6s infinite;
           animation: pendulum2 6s infinite;
 }
@@ -1326,18 +1322,18 @@ body {
   }
 }
 
-.intro #tungsten4 path {
+#tungsten4 path {
   -webkit-animation: lightd 6s ease infinite, move2 3s infinite;
           animation: lightd 6s ease infinite, move2 3s infinite;
 }
 
-.intro #glow4 path {
+#glow4 path {
   -webkit-animation: glowd 6s ease infinite, move2 3s infinite;
           animation: glowd 6s ease infinite, move2 3s infinite;
 }
 
-.intro .bulb4,
-.intro .line4 {
+.bulb4,
+.line4 {
   -webkit-animation: move 3s infinite;
           animation: move 3s infinite;
 }
@@ -1434,22 +1430,22 @@ body {
   }
 }
 
-.intro #tungsten5 path {
+#tungsten5 path {
   -webkit-transform-origin: top;
           transform-origin: top;
   -webkit-animation: lighte 8s ease infinite, pendulum2 2s ease infinite;
           animation: lighte 8s ease infinite, pendulum2 2s ease infinite;
 }
 
-.intro #glow5 path {
+#glow5 path {
   -webkit-transform-origin: top;
           transform-origin: top;
   -webkit-animation: glowe 8s ease infinite, pendulum2 2s ease infinite;
           animation: glowe 8s ease infinite, pendulum2 2s ease infinite;
 }
 
-.intro .bulb5,
-.intro .line5 {
+.bulb5,
+.line5 {
   -webkit-transform-origin: top;
           transform-origin: top;
   -webkit-animation: pendulum2 2s ease infinite;
@@ -1548,7 +1544,8 @@ body {
   }
 }
 
-.intro .heading {
+/* // 3:________________________________________ */
+.heading {
   font-size: 7vh;
   text-decoration: underline;
   -webkit-text-decoration-color: white;
@@ -1556,7 +1553,7 @@ body {
   margin-bottom: 3px;
 }
 
-.intro .announcement {
+.announcement {
   position: absolute;
   width: 90vw;
   padding-top: 0.2em;
@@ -1577,20 +1574,20 @@ body {
           box-shadow: 2px 12px 144px -33px #00f3df;
 }
 
-.intro .announcement:hover {
+.announcement:hover {
   text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #00f3df, 0 0 30px #00f3df, 0 0 40px #00f3df, 0 0 55px #00f3df, 0 0 75px #00f3df, -40px -6px 6px rgba(0, 243, 223, 0);
   -webkit-transition: 1s ease;
   transition: 1s ease;
 }
 
-.intro .locationFetch {
+.locationFetch {
   height: 7vh;
   width: 7vh;
   -webkit-animation: jumping 0.8s ease-out infinite;
           animation: jumping 0.8s ease-out infinite;
 }
 
-.intro .locationFetch:hover {
+.locationFetch:hover {
   cursor: pointer;
   -webkit-transform: rotate(3deg);
           transform: rotate(3deg);
@@ -1650,20 +1647,22 @@ body {
   }
 }
 
-.intro ::-webkit-scrollbar {
+/* // 4:________________________________________ */
+::-webkit-scrollbar {
   width: 0px;
   /* Remove scrollbar space */
   background: transparent;
 }
 
-.intro .question {
+/* // 5:________________________________________ */
+.question {
   width: 100vw;
   top: 250vh;
   position: absolute;
   text-align: center;
 }
 
-.intro .question a {
+.question a {
   font-family: 'Amatic SC', cursive;
   font-stretch: expanded;
   color: white;
@@ -1674,7 +1673,8 @@ body {
           text-decoration-color: #00f3e0;
 }
 
-.intro .currentMarket {
+/* // 6:________________________________________ */
+.currentMarket {
   height: 100vh;
   top: 140vh;
   position: absolute;
@@ -1689,7 +1689,7 @@ body {
   text-align: center;
 }
 
-.intro .currentMarket .blueBar {
+.currentMarket .blueBar {
   background: #00f3e0;
   height: 50vh;
   top: 17vh;
@@ -1702,7 +1702,7 @@ body {
   overflow: hidden;
 }
 
-.intro .currentMarket .poster {
+.currentMarket .poster {
   border: 10px solid #00f3e0;
   border-radius: 10px;
   width: 90vw;
@@ -2338,5 +2338,31 @@ button:hover {
   padding-left: 15px;
   color: #fdffdf;
   font-size: 3.5em;
+}
+
+#landingMobile {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  z-index: 1;
+  position: absolute;
+}
+
+#landingMobile #logo {
+  width: 200px;
+  height: 250px;
+  margin-left: 0;
+}
+
+#landingMobile #logo #layer106 {
+  -webkit-transform: translate(-220px, -280px);
+          transform: translate(-220px, -280px);
+  z-index: -1;
+}
+
+#landingMobile #bulb {
+  height: 30vh;
+  margin-left: 0;
+  top: -10px;
 }
 /*# sourceMappingURL=index.css.map */
