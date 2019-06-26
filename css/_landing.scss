@@ -301,7 +301,7 @@
         z-index: -1;
     }
 
-    @keyframes rotation {
+    @keyframes rotationIn {
         from {
             -webkit-transform: rotate(0deg);
         }
@@ -335,7 +335,7 @@
 
     #logo:hover>#layer101 {
         transform-origin: 1250px 1200px;
-        animation: rotation 4s;
+        animation: rotationIn 4s;
     }
 
     #layer101 {

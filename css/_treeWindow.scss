@@ -1,10 +1,11 @@
 // Tree Window (Display of deep roots Tree)
 
 .treeWindow {
-    top: 580vh;
+    top: 570vh;
     position: absolute;
     width: 100vw;
     height: 200vh;
+
 }
 
 /* Index: */
@@ -16,11 +17,11 @@
 /* // 1:________________________________________ */
 
 #tree {
-    width: 100vw;
-    height: auto;
-    position: absolute;
-    transform: scale(0.6);
-    bottom: -30vh;
+    width: auto;
+    height: 150vh;
+    position: relative;
+    transform: translateY(20vh);
+    margin: 0;
 }
 
 
@@ -58,7 +59,7 @@
     0% {
         stroke: #19D8FF;
         stroke-dashoffset: 1;
-        stroke-width: 5;
+        stroke-width: 30;
     }
 
     10% {
@@ -100,15 +101,12 @@
     100% {
         stroke: #19D8FF;
         stroke-dashoffset: 40000;
-        stroke-width: 5;
+        stroke-width: 30;
     }
 }
 
 
-#treelayer101,
-#treelayer102,
-#treelayer103,
-#treelayer104 {
+#treelayer101{
     /* animation: treeBrighten2 10s ease-in-out infinite, dash 10s linear infinite; */
     stroke-dasharray: 5000;
     animation: treeBrighten2 20s ease-out infinite, treeBrighten 10s ease-out infinite;
@@ -123,7 +121,6 @@
 
 #drCollective{
     height: 20vh;
-    top: 10vh;
     position: absolute;
     font-size: 6em;
     letter-spacing: 1rem;
@@ -146,5 +143,6 @@
     color: $drWhite;
     text-decoration: overline;
     text-decoration-color: $drBlueL;
-    font-weight: 500;    
+    font-weight: 500;
+    line-height: 40vh;
 }

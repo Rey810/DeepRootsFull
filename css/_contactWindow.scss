@@ -1,0 +1,44 @@
+// Contact Window
+
+// 1: Setting up window
+
+// _____________1_______________
+
+#contactWindow{
+    top: 1070vh;
+    position: absolute;
+    height: 130vh;
+    #contactBar{
+        height: 20vh;
+        line-height: 20vh;
+        border-bottom: 2px solid $drBlueL;
+        font-size: 6em;
+        font-weight: 400;
+        color: $drWhite;
+    }
+    #contactName,#contactEmail{
+        padding: 2px;
+        padding-left: 15px;
+        color: $drWhite;
+        line-height: 10vh;
+        font-size: 4.5em;
+        border: 10px solid $drBlueL;
+        border-radius: 20px;
+        margin-top: 5vh;
+        box-shadow: 2px 12px 144px -40px rgba(0, 243, 223, 1);
+        &:hover{
+            background: $drBlack;
+            transition: 0.5s linear;
+        }
+    }
+    #contactForm{
+        height: 60vh;
+        border: 10px solid $drBlueL;
+        border-radius: 20px;
+        margin-top: 10vh;
+        box-shadow: 2px 12px 144px -50px rgba(0, 243, 223, 1);
+        padding-left: 15px;
+        color: $drWhite;
+        font-size: 3.5em;
+    }
+}

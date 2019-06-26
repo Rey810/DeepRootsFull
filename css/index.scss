@@ -17,8 +17,10 @@
 
 body{ 
     height: 1400vh;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
     font-family: 'Amatic SC', cursive !important;
 }
 #canvasballs{
@@ -26,6 +28,8 @@ body{
     position: fixed !important;
     background: $drBlack;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -52,7 +56,7 @@ body{
 
 @import "./videoWindow";
 
-// ________________8____________________
+// ________________8____________________s
 
 @import "./treeWindow";
 
@@ -63,5 +67,9 @@ body{
 // ________________10____________________
 
 @import "./involvedWindow";
+
+// ________________11____________________
+
+@import "./contactWindow";
 
 

@@ -578,6 +578,7 @@
             width: 200vw;
             transform: rotate(-19deg);
             z-index: 3;
+            overflow: hidden;
         }
         .poster{
             border: 10px solid $drBlueL;

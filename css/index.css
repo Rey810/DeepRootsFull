@@ -3,8 +3,10 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 body {
   height: 1400vh;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
   font-family: 'Amatic SC', cursive !important;
 }
 
@@ -13,6 +15,8 @@ body {
   position: fixed !important;
   background: #161111;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 #logo {
@@ -524,7 +528,7 @@ body {
   z-index: -1;
 }
 
-@-webkit-keyframes rotation {
+@-webkit-keyframes rotationIn {
   from {
     -webkit-transform: rotate(0deg);
   }
@@ -533,7 +537,7 @@ body {
   }
 }
 
-@keyframes rotation {
+@keyframes rotationIn {
   from {
     -webkit-transform: rotate(0deg);
   }
@@ -575,8 +579,8 @@ body {
 .landing #logo:hover > #layer101 {
   -webkit-transform-origin: 1250px 1200px;
           transform-origin: 1250px 1200px;
-  -webkit-animation: rotation 4s;
-          animation: rotation 4s;
+  -webkit-animation: rotationIn 4s;
+          animation: rotationIn 4s;
 }
 
 .landing #layer101 {
@@ -1695,6 +1699,7 @@ body {
   -webkit-transform: rotate(-19deg);
           transform: rotate(-19deg);
   z-index: 3;
+  overflow: hidden;
 }
 
 .intro .currentMarket .poster {
@@ -1970,7 +1975,7 @@ button:hover {
   top: 460vh;
   position: absolute;
   min-width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   border: none;
   overflow-x: hidden;
 }
@@ -2020,7 +2025,7 @@ button:hover {
 }
 
 .treeWindow {
-  top: 580vh;
+  top: 570vh;
   position: absolute;
   width: 100vw;
   height: 200vh;
@@ -2031,12 +2036,12 @@ button:hover {
 /* 2: Deep Roots Collective */
 /* // 1:________________________________________ */
 #tree {
-  width: 100vw;
-  height: auto;
-  position: absolute;
-  -webkit-transform: scale(0.6);
-          transform: scale(0.6);
-  bottom: -30vh;
+  width: auto;
+  height: 150vh;
+  position: relative;
+  -webkit-transform: translateY(20vh);
+          transform: translateY(20vh);
+  margin: 0;
 }
 
 @-webkit-keyframes treeBrighten {
@@ -2080,7 +2085,7 @@ button:hover {
   0% {
     stroke: #19D8FF;
     stroke-dashoffset: 1;
-    stroke-width: 5;
+    stroke-width: 30;
   }
   10% {
     stroke: #8D4ECC;
@@ -2112,14 +2117,14 @@ button:hover {
   100% {
     stroke: #19D8FF;
     stroke-dashoffset: 40000;
-    stroke-width: 5;
+    stroke-width: 30;
   }
 }
 @keyframes treeBrighten2 {
   0% {
     stroke: #19D8FF;
     stroke-dashoffset: 1;
-    stroke-width: 5;
+    stroke-width: 30;
   }
   10% {
     stroke: #8D4ECC;
@@ -2151,14 +2156,11 @@ button:hover {
   100% {
     stroke: #19D8FF;
     stroke-dashoffset: 40000;
-    stroke-width: 5;
+    stroke-width: 30;
   }
 }
 
-#treelayer101,
-#treelayer102,
-#treelayer103,
-#treelayer104 {
+#treelayer101 {
   /* animation: treeBrighten2 10s ease-in-out infinite, dash 10s linear infinite; */
   stroke-dasharray: 5000;
   -webkit-animation: treeBrighten2 20s ease-out infinite, treeBrighten 10s ease-out infinite;
@@ -2171,7 +2173,6 @@ button:hover {
 /* // 2:________________________________________ */
 #drCollective {
   height: 20vh;
-  top: 10vh;
   position: absolute;
   font-size: 6em;
   letter-spacing: 1rem;
@@ -2196,6 +2197,7 @@ button:hover {
   -webkit-text-decoration-color: #00f3e0;
           text-decoration-color: #00f3e0;
   font-weight: 500;
+  line-height: 40vh;
 }
 
 #aboutWindow {
@@ -2203,6 +2205,7 @@ button:hover {
   position: absolute;
   height: 200vh;
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 #aboutWindow #bluePicBar {
@@ -2289,5 +2292,51 @@ button:hover {
   color: #fdffdf;
   letter-spacing: 0.1em;
   top: 10vh;
+}
+
+#contactWindow {
+  top: 1070vh;
+  position: absolute;
+  height: 130vh;
+}
+
+#contactWindow #contactBar {
+  height: 20vh;
+  line-height: 20vh;
+  border-bottom: 2px solid #00f3e0;
+  font-size: 6em;
+  font-weight: 400;
+  color: #fdffdf;
+}
+
+#contactWindow #contactName, #contactWindow #contactEmail {
+  padding: 2px;
+  padding-left: 15px;
+  color: #fdffdf;
+  line-height: 10vh;
+  font-size: 4.5em;
+  border: 10px solid #00f3e0;
+  border-radius: 20px;
+  margin-top: 5vh;
+  -webkit-box-shadow: 2px 12px 144px -40px #00f3df;
+          box-shadow: 2px 12px 144px -40px #00f3df;
+}
+
+#contactWindow #contactName:hover, #contactWindow #contactEmail:hover {
+  background: #161111;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+#contactWindow #contactForm {
+  height: 60vh;
+  border: 10px solid #00f3e0;
+  border-radius: 20px;
+  margin-top: 10vh;
+  -webkit-box-shadow: 2px 12px 144px -50px #00f3df;
+          box-shadow: 2px 12px 144px -50px #00f3df;
+  padding-left: 15px;
+  color: #fdffdf;
+  font-size: 3.5em;
 }
 /*# sourceMappingURL=index.css.map */
