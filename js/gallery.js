@@ -1,4 +1,5 @@
 const gallery = document.querySelector('.gallery');
+const galleryMobile = document.querySelector('.galleryMobile');
 const overlay = document.querySelector('.overlay');
 const overlayImage = overlay.querySelector('img');
 const overlayClose = overlay.querySelector('.close');
@@ -54,6 +55,7 @@ const digits = Array.from({
 ]);
 const html = digits.map(generateHTML).join('');
 gallery.innerHTML = html;
+galleryMobile.innerHTML = html;
 
 function getImage(e) {
     const src = e.currentTarget.querySelector('img').src;

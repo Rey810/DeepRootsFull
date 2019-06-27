@@ -1842,9 +1842,9 @@ button:hover {
 
 .overlay-inner {
   background: #19D8FF;
-  width: 40vw;
-  height: 40vw;
-  padding: 40px;
+  height: 60vw;
+  width: auto;
+  padding: 5px;
 }
 
 .overlay img {
@@ -2380,7 +2380,7 @@ button:hover {
   position: absolute;
   top: 100vh;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
 }
 
@@ -2419,10 +2419,37 @@ button:hover {
   width: 100vw;
   background-image: url("../gallery/poster.png");
   background-position: center;
-  height: 24vh;
+  height: 20vh;
   z-index: 4;
   position: relative;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+}
+
+#galleryMobile {
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  top: 200vh;
+  left: 0;
+}
+
+#galleryMobile .banner {
+  top: 20vw;
+  left: 0;
+  width: 100vw;
+  height: 60vh;
+  overflow-x: scroll;
+  border: none;
+  border-radius: 0;
+}
+
+#galleryMobile .banner .galleryMobile {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 100px);
+  grid-auto-rows: 100px;
+  grid-auto-flow: dense;
 }
 /*# sourceMappingURL=index.css.map */
