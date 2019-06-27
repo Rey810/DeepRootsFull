@@ -1,8 +1,11 @@
 const gallery = document.querySelector('.gallery');
 const galleryMobile = document.querySelector('.galleryMobile');
 const overlay = document.querySelector('.overlay');
+const overlayMobile = document.querySelector('.overlayMobile');
 const overlayImage = overlay.querySelector('img');
+const overlayMobileImage = overlayMobile.querySelector('img');
 const overlayClose = overlay.querySelector('.close');
+const overlayMobileClose = overlayMobile.querySelector('.close');
 
 function generateHTML([h, v]) {
     return `
@@ -60,14 +63,18 @@ galleryMobile.innerHTML = html;
 function getImage(e) {
     const src = e.currentTarget.querySelector('img').src;
     overlayImage.src = src;
+    overlayMobileImage.src = src;
     overlay.classList.add('open');
+    overlayMobile.classList.add('open');
 }
 
 function closeImage() {
     overlay.classList.remove('open');
+    overlayMobile.classList.remove('open');
 }
 
 overlayClose.addEventListener('click', closeImage)
+overlayMobileClose.addEventListener('click', closeImage)
 
 const items = document.querySelectorAll('.item');
 items.forEach(item => item.addEventListener('click', getImage));

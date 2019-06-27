@@ -646,7 +646,7 @@
     margin-bottom: 2px;
 }
 
-.overlay {
+.overlay,.overlayMobile {
     position: fixed;
     top: 0;
     right: 0;
@@ -702,11 +702,14 @@ button:hover {
 .overlay.open {
     display: grid;
 }
+.overlayMobile.open {
+    display: grid;
+}
 
 .overlay-inner {
     background: #19D8FF;
-    height: 60vw;
-    width: auto;
+    width: 60vw;
+    height: auto;
     padding: 5px;
 }
 
