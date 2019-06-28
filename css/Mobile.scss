@@ -3,6 +3,7 @@
 // 1: Landing
 // 2: Intro Mobile
 // 3: Gallery Mobile
+// 4: treeWindowMobile
 @import "./variables";
 // ---------1--------------
 
@@ -94,14 +95,15 @@
     width: 100vw;
     top: 200vh;
     left: 0;
-    // background: red;
+    background: green;
+    opacity: 0.3;
     .banner{
         top: 20vw;
-        min-width: 100vw;
+        width: 100vw;
         height: 60vh;
         overflow-x: scroll;
         border: none;
-        padding: 8px;
+        left:0;
         border-radius: 0;
         .galleryMobile{
             display: grid;
@@ -117,15 +119,15 @@
             height: auto;
         }
         .close{
-        background: $drBlueL;
-        color: $drWhite;
-        border: 2px solid $drBlueL;
-        border-radius: 50px;
-        font-size: 30px;
-        right: 5px;
-        position: absolute;
-        width: 32px;
-    }
+            background: $drBlueL;
+            color: $drWhite;
+            border: 2px solid $drBlueL;
+            border-radius: 50px;
+            font-size: 30px;
+            right: 5px;
+            position: absolute;
+            width: 32px;
+        }
     }
     
     .galleryHeading{
@@ -137,43 +139,68 @@
     }
     .videoHeading{
         top: 60vh;
-        margin-top: 0px;
+        margin-top: 25px;
         height: 10vh;
         padding: 0;
         font-size: 5vh;
         color: $drWhite;
     }
     #videoWindowMobile{
-    align-self: center;
-    position: absolute;
-    max-width: 100vw;
-    height: auto;
-    border: none;
-    top: 80vh;
-    display: flex;
-    border: none;
-    padding: 0px;
-    margin: 0px;
-    video{
-        flex: 1;
+        align-self: center;
+        position: absolute;
         max-width: 100vw;
+        height: auto;
+        border: none;
+        top: 80vh;
+        display: flex;
+        border: none;
+        padding: 0px;
+        margin: 0px;
+        video{
+            flex: 1;
+            max-width: 100vw;
+        }
+        overflow-x: hidden;
     }
-    overflow-x: hidden;
+    
 }
 
+// ---------4--------------
+
+#treeWindowMobile{
+    margin-top: 50px;
+    top:310vh;
+    position: absolute;
+    height: 100vh;
+    // background: red;
+    // opacity: 0.3;
+    left: 0;
+    width: 100%;
+    opacity: 0.8;
+    .row{
+        margin: 0;
+    }
+    #treeMobile{
+        width: auto;
+        margin: auto;
+    }
+    .collectiveHeading{
+        width: 100vw;
+        font-size: 4.5em;
+        color: $drWhite;
+        text-decoration: overline;
+        text-decoration-color: $drBlueL;
+    }
 }
-
-
-
 // .videoContent {
-//     position: absolute;
-//     color: #f1f1f1;
-//     width: 100%;
-//     padding: 20px;
-//     left: 5vw;
-//     top: 460vh;
-//     height: 20px;
-//     font-family: 'Amatic SC', cursive;
+    //     position: absolute;
+    //     color: #f1f1f1;
+    //     width: 100%;
+    //     padding: 20px;
+    //     left: 5vw;
+    //     top: 460vh;
+    //     height: 20px;
+    //     font-family: 'Amatic SC', cursive;
 //     h1{
 //         font-weight: bolder;
 //         font-size: 7em;

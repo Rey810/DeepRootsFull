@@ -582,16 +582,16 @@
             overflow: hidden;
         }
         .poster{
+            top: 10vh;
             border: 10px solid $drBlueL;
             border-radius: 10px;
             width: 90vw;
             background-image: url('../gallery/poster.png');
             background-position: center;
-            height: 70vh;
+            height: 50vh;
             z-index: 4;
             position: relative;
-            background-size: cover;
-            background-repeat: no-repeat;
+            background-size: contain;
         }
     }
 
@@ -639,11 +639,14 @@
 
 
 .close {
-    background: none;
-    color: white;
-    border: 2px solid white;
+    color: $drBlack;
+    border: 2px solid $drBlueL;
     border-radius: 50px;
-    margin-bottom: 2px;
+    position: relative;
+    font-size: 5vh;
+    width: 50px;
+    top: -1vh;
+    background: $drBlueL !important;
 }
 
 .overlay,.overlayMobile {
@@ -707,7 +710,6 @@ button:hover {
 }
 
 .overlay-inner {
-    background: #19D8FF;
     width: 60vw;
     height: auto;
     padding: 5px;
@@ -719,13 +721,15 @@ button:hover {
 
 .banner {
     width: 90vw;
+    left: 5vw;
+    margin-left: auto;
+    margin-right: auto;
     height: 80vh;
     top: 270vh;
-    left: 5vw;
     position: absolute;
     overflow-x: hidden;
-    border-radius: 50px;
-    border: 10px solid white;
+    border-top: 10px solid $drBlueL;
+    border-bottom: 10px solid $drBlueL;
 }
 
 .banner::-webkit-scrollbar {
