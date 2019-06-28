@@ -95,8 +95,8 @@
     width: 100vw;
     top: 200vh;
     left: 0;
-    background: green;
-    opacity: 0.3;
+    // background: green;
+    // opacity: 0.3;
     .banner{
         top: 20vw;
         width: 100vw;
@@ -139,7 +139,9 @@
     }
     .videoHeading{
         top: 60vh;
-        margin-top: 25px;
+        margin-bottom: 10px;
+        margin-top:10px;
+
         height: 10vh;
         padding: 0;
         font-size: 5vh;

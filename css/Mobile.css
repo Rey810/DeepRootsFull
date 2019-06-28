@@ -89,8 +89,6 @@
   width: 100vw;
   top: 200vh;
   left: 0;
-  background: green;
-  opacity: 0.3;
 }
 
 #galleryMobile .banner {
@@ -141,7 +139,8 @@
 
 #galleryMobile .videoHeading {
   top: 60vh;
-  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   height: 10vh;
   padding: 0;
   font-size: 5vh;
