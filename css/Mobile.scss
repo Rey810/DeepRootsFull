@@ -280,3 +280,49 @@
         background-image: url('../artworks/4.jpg');
     }
 }
+
+// ---------contactWindowMobile--------------
+
+#contactWindowMobile{
+    top: 630vh;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    // background: green;
+    // opacity: 0.3;
+    left: 0;
+    #contactBarMobile{
+        height: 10vh;
+        line-height: 10vh;
+        border-bottom: 2px solid $drBlueL;
+        font-size: 3em;
+        font-weight: 400;
+        color: $drWhite;
+    }
+    #contactNameMobile,#contactEmailMobile{
+        padding: 2px;
+        height: 8vh;
+        padding-left: 15px;
+        color: $drWhite;
+        line-height: 8vh;
+        font-size: 2.5em;
+        border: 2px solid $drBlueL;
+        border-radius: 20px;
+        margin-top: 2vh;
+        box-shadow: 2px 12px 144px -20px rgba(0, 243, 223, 1);
+        &:hover{
+            background: $drBlack;
+            transition: 0.5s linear;
+        }
+    }
+    #contactFormMobile{
+        height: 60vh;
+        border: 2px solid $drBlueL;
+        border-radius: 20px;
+        margin-top: 2vh;
+        box-shadow: 2px 12px 144px -50px rgba(0, 243, 223, 1);
+        padding-left: 15px;
+        color: $drWhite;
+        font-size: 2.5em;
+    }
+}

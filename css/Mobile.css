@@ -280,4 +280,53 @@
   left: -15vw;
   background-image: url("../artworks/4.jpg");
 }
+
+#contactWindowMobile {
+  top: 630vh;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+}
+
+#contactWindowMobile #contactBarMobile {
+  height: 10vh;
+  line-height: 10vh;
+  border-bottom: 2px solid #00f3e0;
+  font-size: 3em;
+  font-weight: 400;
+  color: #fdffdf;
+}
+
+#contactWindowMobile #contactNameMobile, #contactWindowMobile #contactEmailMobile {
+  padding: 2px;
+  height: 8vh;
+  padding-left: 15px;
+  color: #fdffdf;
+  line-height: 8vh;
+  font-size: 2.5em;
+  border: 2px solid #00f3e0;
+  border-radius: 20px;
+  margin-top: 2vh;
+  -webkit-box-shadow: 2px 12px 144px -20px #00f3df;
+          box-shadow: 2px 12px 144px -20px #00f3df;
+}
+
+#contactWindowMobile #contactNameMobile:hover, #contactWindowMobile #contactEmailMobile:hover {
+  background: #161111;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+#contactWindowMobile #contactFormMobile {
+  height: 60vh;
+  border: 2px solid #00f3e0;
+  border-radius: 20px;
+  margin-top: 2vh;
+  -webkit-box-shadow: 2px 12px 144px -50px #00f3df;
+          box-shadow: 2px 12px 144px -50px #00f3df;
+  padding-left: 15px;
+  color: #fdffdf;
+  font-size: 2.5em;
+}
 /*# sourceMappingURL=Mobile.css.map */
