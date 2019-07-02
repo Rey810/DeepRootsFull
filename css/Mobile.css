@@ -50,7 +50,7 @@
 }
 
 #introMobile .announcement {
-  height: 60vh;
+  height: auto;
   position: absolute;
   background: none;
   top: 10vh;
@@ -86,18 +86,20 @@
 #galleryMobile {
   height: 100vh;
   position: absolute;
-  width: 100vw;
+  min-width: 100vw;
   top: 200vh;
 }
 
 #galleryMobile .banner {
   top: 20vw;
-  width: 100vw;
+  width: 90vw;
+  margin-left: auto;
   height: 60vh;
   overflow-x: scroll;
   border: none;
-  left: 0;
   border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #galleryMobile .banner .galleryMobile {
@@ -174,7 +176,7 @@
   margin-top: 2vh;
   top: 310vh;
   position: absolute;
-  height: 110vh;
+  height: 115vh;
   left: 0;
   width: 100%;
   opacity: 0.8;
@@ -200,7 +202,7 @@
 
 #treeWindowMobile a {
   margin-top: 2vh;
-  font-size: 2.5em;
+  font-size: 3vh;
   color: #fdffdf;
 }
 
@@ -234,7 +236,48 @@
 #involvedWindowMobile a {
   width: 100%;
   margin-top: 2vh;
-  font-size: 2.5em;
+  font-size: 3vh;
   color: #fdffdf;
+}
+
+#artworkWindowMobile {
+  top: 530vh;
+  left: 0;
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+
+#artworkWindowMobile .circle {
+  background: #00f3e0;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  width: auto;
+  position: relative;
+  background-size: contain;
+  background-position: center;
+}
+
+#artworkWindowMobile #circle1 {
+  height: 15vh;
+  left: -25vw;
+  background-image: url("../artworks/1.jpg");
+}
+
+#artworkWindowMobile #circle2 {
+  height: 40vh;
+  background-image: url("../artworks/2.jpg");
+}
+
+#artworkWindowMobile #circle3 {
+  height: 25vh;
+  right: -20vw;
+  background-image: url("../artworks/3.jpg");
+}
+
+#artworkWindowMobile #circle4 {
+  height: 20vh;
+  left: -15vw;
+  background-image: url("../artworks/4.jpg");
 }
 /*# sourceMappingURL=Mobile.css.map */
