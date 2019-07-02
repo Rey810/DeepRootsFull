@@ -88,7 +88,6 @@
   position: absolute;
   width: 100vw;
   top: 200vh;
-  left: 0;
 }
 
 #galleryMobile .banner {
@@ -138,7 +137,7 @@
 }
 
 #galleryMobile .videoHeading {
-  top: 60vh;
+  top: 20vh;
   margin-bottom: 10px;
   margin-top: 10px;
   height: 10vh;
@@ -172,10 +171,10 @@
 }
 
 #treeWindowMobile {
-  margin-top: 50px;
+  margin-top: 2vh;
   top: 310vh;
   position: absolute;
-  height: 100vh;
+  height: 110vh;
   left: 0;
   width: 100%;
   opacity: 0.8;
@@ -197,5 +196,45 @@
   text-decoration: overline;
   -webkit-text-decoration-color: #00f3e0;
           text-decoration-color: #00f3e0;
+}
+
+#treeWindowMobile a {
+  margin-top: 2vh;
+  font-size: 2.5em;
+  color: #fdffdf;
+}
+
+#involvedWindowMobile {
+  top: 430vh;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+}
+
+#involvedWindowMobile #shedImage {
+  border: 10px solid #00f3e0;
+  border-radius: 100%;
+  height: auto;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#involvedWindowMobile .row div {
+  height: 10vh;
+  color: #161111;
+  line-height: 10vh;
+  margin-top: 4vh;
+  background: #00f3e0;
+  min-width: 100vw;
+  font-size: 4.5vh;
+}
+
+#involvedWindowMobile a {
+  width: 100%;
+  margin-top: 2vh;
+  font-size: 2.5em;
+  color: #fdffdf;
 }
 /*# sourceMappingURL=Mobile.css.map */

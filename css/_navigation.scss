@@ -3,11 +3,16 @@
 /* 1 : Navigation */
 
 .navbutton {
-    top: 45%;
-    left: 20px;
+    right: 20px;
     z-index: 5;
     position: fixed;
     color: rgb(77, 202, 203);
+    &:hover{
+        transition: 1s ease;
+        color: white;
+        transform: rotate(90deg);
+    }
+    transition: 1s ease;
 }
 
 .option {
@@ -15,7 +20,7 @@
     left: 20%;
     height: 10vh;
     border-radius: 50px;
-    color: rgba(0, 0, 0, 0);
+    color: rgb(239, 225, 201);
     flex: 1;
     line-height: 10vh;
 }
@@ -49,10 +54,13 @@
 }
 
 .sidenav a {
-    font-size: 4vh;
+    font-size: 5em;
     width: 100%;
     transition: 0.3s;
     font-family: 'Amatic SC', cursive;
+    transition: 0.2s linear;
+    align-content: center;
+    justify-content: center;
 }
 
 .sidenav a:hover {
@@ -65,6 +73,9 @@
 .sidenav a:hover>img {
     background-color: rgb(239, 225, 201);
     transition: 0.2s linear;
+    -webkit-box-shadow: 10px 10px 77px 8px rgba(0,243,223,1);
+    -moz-box-shadow: 10px 10px 77px 8px rgba(0,243,223,1);
+    box-shadow: 10px 10px 77px 8px rgba(0,243,223,1);
 }
 
 .closebtn {
@@ -73,6 +84,7 @@
     left: 25px;
     height: 10px;
     width: 10px;
+    font-size: 5em;
     z-index: 5;
 }
 
