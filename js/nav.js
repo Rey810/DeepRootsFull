@@ -21,14 +21,14 @@ function closeNav() { //closes nav bar
 
 document.addEventListener("wheel", closeNav);
 
-function openNav() { //opens navigation bar
+function openNavMobile() { //opens navigation bar
     console.log(document.getElementById("navigationMobile").style.width);
     document.getElementById("navigationMobile").style.width = "100%";
     document.getElementById("navigationMobile").style.opacity = "1";
     console.log(document.getElementById("navigationMobile").style.width);
 }
 
-function closeNav() { //closes nav bar
+function closeNavMobile() { //closes nav bar
     document.getElementById("navigationMobile").style.opacity = "0";
     document.getElementById("navigationMobile").style.width = "0%";
 }

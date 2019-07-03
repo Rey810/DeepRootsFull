@@ -516,9 +516,9 @@
     </div>
     <!-- Display on smaller screens -->
     <div class='container-fluid d-lg-none bodyMobile'>
-            <span id="navMobile" class="navbuttonMobile" style="font-size:60px;cursor:pointer" onmouseover="openNav()">&#9776;</span>
+            <span id="navMobile" class="navbuttonMobile" style="font-size:60px;cursor:pointer" onmouseover="openNavMobile()">&#9776;</span>
         <div id="navigationMobile" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onmouseover="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onmouseover="closeNavMobile()">&times;</a>
             <a id="landingButtonMobile" class="optionMobile" href="#" style="color: #00f3e0"><img
                     src="images/logoCircle.png">Home</a>
             <a id="nightMarketButtonMobile" class="optionMobile" href="#"><img
@@ -901,7 +901,7 @@
             $('html,body').animate({
                 scrollTop: $('#introMobile').offset().top
             }, 1500);
-            closeNav();
+            closeNavMobile();
         })
         $('#landingButton').click(function () {
             $('html,body').animate({
@@ -913,7 +913,7 @@
             $('html,body').animate({
                 scrollTop: $('#landingMobile').offset().top
             }, 1500);
-            closeNav();
+            closeNavMobile();
         })
         $('#galleryButton').click(function () {
             $('html,body').animate({
@@ -925,7 +925,7 @@
             $('html,body').animate({
                 scrollTop: $('#galleryMobile').offset().top
             }, 1500);
-            closeNav();
+            closeNavMobile();
         })
         $('#aboutUsButton').click(function () {
             $('html,body').animate({
@@ -937,7 +937,7 @@
             $('html,body').animate({
                 scrollTop: $('#treeWindowMobile').offset().top
             }, 1500);
-            closeNav();
+            closeNavMobile();
         })
         $('#contactButton').click(function () {
             $('html,body').animate({
@@ -949,7 +949,7 @@
             $('html,body').animate({
                 scrollTop: $('#contactWindowMobile').offset().top
             }, 1500);
-            closeNav();
+            closeNavMobile();
         })
         $('#socialButton').click(function () {
             $('html,body').animate({
@@ -961,7 +961,7 @@
             $('html,body').animate({
                 scrollTop: $('#socialWindowMobile').offset().top
             }, 1500);
-            closeNav();
+            closeNavMobile();
         })
     </script>
 </body>
