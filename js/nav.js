@@ -15,8 +15,8 @@ function openNav() { //opens navigation bar
 }
 
 function closeNav() { //closes nav bar
-    document.getElementById("navigation").style.width = "0%";
     document.getElementById("navigation").style.opacity = "0";
+    document.getElementById("navigation").style.width = "0%";
 }
 
 document.addEventListener("wheel", closeNav);
