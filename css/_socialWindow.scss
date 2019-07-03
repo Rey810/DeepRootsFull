@@ -1,0 +1,48 @@
+// Social Window
+// 1: Social Window Layout
+
+// -----------1------------
+#socialWindow{
+    top: 1200vh;
+    height: 100vh;
+    width: 100vw;
+    // background: $drBlueL;
+    // opacity: 0.5;
+    position: absolute;
+    #blueBar{
+        background: $drBlueL;
+        border-radius: 10px;
+        height: 20px;
+        top: 10vh;
+        position: absolute;
+    }
+    #socialMedia{
+        position: absolute;
+        top: 30vh;
+        height:40vh;
+        img{
+            background: $drBlueL;
+            padding: 20px;
+            border-radius: 50%;
+            align-self: center;
+            flex: 1;
+            transition: 0.3s ease;
+            &:hover{
+                background: $drWhite;
+                color: $drBlueL;
+                transform: scale(1.4);
+                transition: 0.3s ease;
+                cursor: pointer;
+                -webkit-box-shadow: 10px 10px 77px 8px rgba(0,243,223,1);
+                -moz-box-shadow: 10px 10px 77px 8px rgba(0,243,223,1);
+                box-shadow: 10px 10px 77px 8px rgba(0,243,223,1);
+            }
+        }
+    }
+    #details{
+        color: white;
+        top: 60vh;
+        position: absolute;
+        font-size: 4em;
+    }
+}

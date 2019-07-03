@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 body {
-  height: 1400vh;
+  height: 1200vh;
   min-width: 100vw;
   overflow-x: hidden;
   margin: 0;
@@ -27,6 +27,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 100vw;
+  left: 0;
 }
 
 #logo {
@@ -40,6 +41,8 @@ body {
   z-index: 2;
   margin-left: 25px;
   margin-top: 25px;
+  -webkit-transition: 4s ease;
+  transition: 4s ease;
 }
 
 /* 3:________________________________________  */
@@ -593,10 +596,6 @@ body {
           animation: rotationIn 4s;
 }
 
-#layer101 {
-  z-index: 1;
-}
-
 /* 5:________________________________________  */
 #logo:hover + #text {
   -webkit-animation: animate 4s linear;
@@ -646,6 +645,11 @@ body {
   z-index: 1;
 }
 
+#logoLayer106, #layer104 {
+  -webkit-transition: 4s ease;
+  transition: 4s ease;
+}
+
 .landing {
   font-family: 'Amatic SC', cursive !important;
 }
@@ -657,13 +661,13 @@ body {
   z-index: 5;
   position: fixed;
   color: #4dcacb;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .navbutton:hover {
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   color: white;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -674,7 +678,7 @@ body {
   left: 20%;
   height: 10vh;
   border-radius: 50px;
-  color: #efe1c9;
+  color: #fdffdf;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -682,7 +686,7 @@ body {
 }
 
 .option img {
-  background-color: #4dcacb;
+  background-color: #00f3e0;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -714,10 +718,12 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   z-index: 10;
+  background: #161111;
+  opacity: 0.7 !important;
 }
 
 .sidenav a {
-  font-size: 5em;
+  font-size: 4em;
   width: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -747,6 +753,10 @@ body {
   transition: 0.2s linear;
   -webkit-box-shadow: 10px 10px 77px 8px #00f3df;
   box-shadow: 10px 10px 77px 8px #00f3df;
+}
+
+.sidenav a:hover > .sidenav {
+  background: black !important;
 }
 
 .closebtn {
@@ -795,7 +805,7 @@ body {
   position: absolute;
   width: 100vw;
   height: 101vh;
-  top: 60vh;
+  top: 64vh;
 }
 
 @-webkit-keyframes move {
@@ -1589,19 +1599,21 @@ body {
   padding-top: 0.2em;
   height: 60vh;
   top: 5vh;
-  background-color: #161111;
   left: 5vw;
   font-family: 'Amatic SC', cursive;
   font-stretch: expanded;
   color: #00f3df;
   font-size: 6vh;
   text-align: center;
-  border: 10px solid;
-  border-color: #FFF;
+  border: 10px dotted;
+  background: #161111;
+  border-color: #00f3e0;
   border-radius: 50px;
   overflow: hidden;
   -webkit-box-shadow: 2px 12px 144px -33px #00f3df;
           box-shadow: 2px 12px 144px -33px #00f3df;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .announcement:hover {
@@ -2381,5 +2393,59 @@ button:hover {
   padding-left: 15px;
   color: #fdffdf;
   font-size: 3.5em;
+}
+
+#socialWindow {
+  top: 1200vh;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+#socialWindow #blueBar {
+  background: #00f3e0;
+  border-radius: 10px;
+  height: 20px;
+  top: 10vh;
+  position: absolute;
+}
+
+#socialWindow #socialMedia {
+  position: absolute;
+  top: 30vh;
+  height: 40vh;
+}
+
+#socialWindow #socialMedia img {
+  background: #00f3e0;
+  padding: 20px;
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#socialWindow #socialMedia img:hover {
+  background: #fdffdf;
+  color: #00f3e0;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px 77px 8px #00f3df;
+  box-shadow: 10px 10px 77px 8px #00f3df;
+}
+
+#socialWindow #details {
+  color: white;
+  top: 60vh;
+  position: absolute;
+  font-size: 4em;
 }
 /*# sourceMappingURL=index.css.map */

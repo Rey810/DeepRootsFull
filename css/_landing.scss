@@ -18,6 +18,7 @@
     z-index: 2;
     margin-left: 25px;
     margin-top: 25px;
+    transition: 4s ease;
 }
 
 
@@ -329,9 +330,7 @@
     transform-origin: 1250px 1200px;
     animation: rotationIn 4s;
 }
-#layer101 {
-    z-index: 1;
-}
+
 /* 5:________________________________________  */
 
 #logo:hover+#text {
@@ -365,4 +364,9 @@
 }
 #layer101 {
     z-index: 1;
+}
+
+#logoLayer106,#layer104 {
+    transition: 4s ease;
+    
 }

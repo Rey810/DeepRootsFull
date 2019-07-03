@@ -11,7 +11,7 @@
 // 9: About Window
 // 10: Involved? Window
 // 11: Contact Window
-// 12: Mobile Window
+// 12: Social Window
 // ________________1____________________
 
 @import "./variables";
@@ -20,7 +20,7 @@
 // ________________2____________________
 
 body{ 
-    height: 1400vh;
+    height: 1200vh;
     min-width: 100vw;
     overflow-x: hidden;
     margin: 0;
@@ -39,6 +39,8 @@ body{
     margin: 0;
     padding: 0;
     min-width: 100vw;
+    left: 0;
+
 }
 
 
@@ -82,5 +84,4 @@ body{
 @import "./contactWindow";
 // ________________12____________________
 
-
-
+@import "./socialWindow"

@@ -24,7 +24,7 @@
         position: absolute;
         width: 100vw;
         height: 101vh;
-        top: 60vh;
+        top: 64vh;
     }
 
     @keyframes move {
@@ -476,18 +476,19 @@
         padding-top: 0.2em;
         height: 60vh;
         top: 5vh;
-        background-color: #161111;
         left: 5vw;
         font-family: 'Amatic SC', cursive;
         font-stretch: expanded;
         color: rgba(0, 243, 223, 1);
         font-size: 6vh;
         text-align: center;
-        border: 10px solid;
-        border-color: #FFF;
+        border: 10px dotted;
+        background: $drBlack;
+        border-color: $drBlueL;
         border-radius: 50px;
         overflow: hidden;
         box-shadow: 2px 12px 144px -33px rgba(0, 243, 223, 1);
+        transition: 1s ease;
     }
 
     .announcement:hover {

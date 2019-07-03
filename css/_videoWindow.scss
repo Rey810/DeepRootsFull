@@ -1,8 +1,8 @@
 #videoWindow {
     top: 460vh;
     position: absolute;
-    min-width: 100%;
-    height: 100vh;
+    min-width: 100vw;
+    left: 0;
     border: none;
     overflow-x: hidden;
 }
