@@ -7,11 +7,18 @@
 // 5: involvedWindowMobile
 // 6: artworkWindowMobile
 @import "./variables";
+
+.bodyMobile{
+    height: 830vh !important;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 // ---------1--------------
 
 #landingMobile{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
     z-index: 1;
     position: absolute;
@@ -27,6 +34,8 @@
     #bulb{
         height: 30vh;
         top: -25px;
+        width: 90vw;
+        left: 0;
     }
     #textLogo {
         position: absolute;
@@ -324,5 +333,141 @@
         padding-left: 15px;
         color: $drWhite;
         font-size: 2.5em;
+    }
+}
+
+// ---------socialWindowMobile--------------
+
+#socialWindowMobile{
+    top: 730vh;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left:0;
+    // background: pink;
+    // opacity: 0.6;
+    #blueBar{
+        background: $drBlueL;
+        height: 2vh;
+        border-radius: 10px;
+        top: 10vh;
+    }
+    #socialMedia{
+        top: 15vh;
+        flex-direction: column;
+        align-items: center;
+        div{
+            margin-top: 40px;
+            img{
+                background: $drBlueL;
+                border-radius: 50%;
+                padding: 10px;
+            }
+        }
+    }
+    #details{
+        top: 25vh;
+        font-size: 2em;
+        color: $drWhite;
+    }
+}
+
+
+// ---------NavWindowMobile--------------
+.navbuttonMobile {
+    right: 20vw;
+    z-index: 5;
+    position: fixed;
+    color: rgb(77, 202, 203);
+    font-size: 45px !important;
+
+    &:hover {
+        transition: 0.5s ease;
+        color: white;
+        transform: rotate(90deg);
+    }
+
+    transition: 0.5s ease;
+}
+
+#navigationMobile{
+
+    .optionMobile {
+        margin-left: 20%;
+        height: 10vh;
+        border-radius: 50px;
+        color: $drWhite;
+        flex: 1;
+        line-height: 10vh;
+        font-size: 2.5em !important;
+    }
+
+    .optionMobile img {
+        background-color: $drBlueL;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding: 10px;
+        position: relative;
+        top: 10%;
+    }
+
+
+    .sidenav {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        left: 0;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        transition: 0.5s;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        z-index: 10;
+        background: $drBlack;
+        opacity: 1 !important;
+    }
+
+    .sidenav a {
+        font-size: 2em !important;
+        width: 100%;
+        transition: 0.3s;
+        font-family: 'Amatic SC', cursive;
+        transition: 0.2s linear;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .sidenav a:hover {
+        flex: 2;
+        color: rgb(239, 225, 201);
+        transition: 0.2s linear;
+        cursor: pointer;
+    }
+
+    .sidenav a:hover>img {
+        background-color: rgb(239, 225, 201);
+        transition: 0.2s linear;
+        -webkit-box-shadow: 10px 10px 77px 8px rgba(0, 243, 223, 1);
+        -moz-box-shadow: 10px 10px 77px 8px rgba(0, 243, 223, 1);
+        box-shadow: 10px 10px 77px 8px rgba(0, 243, 223, 1);
+    }
+
+    .sidenav a:hover>.sidenav {
+        background: black !important;
+    }
+
+    .closebtn {
+        position: absolute;
+        color: rgba(77, 202, 203, 1);
+        left: 25px;
+        height: 10px;
+        width: 10px !important;
+        font-size: 5em;
+        z-index: 5;
     }
 }

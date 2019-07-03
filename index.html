@@ -19,7 +19,7 @@
     <!-- Canvas for background -->
     <canvas id="canvasballs" class="container-fluid"></canvas>
     <!-- Display on larger screens -->
-    <div class='container-fluid d-none d-lg-block'>
+    <div class='container-fluid d-none d-lg-block bodyLarge'>
         <!-- Scroll arrow in corner  -->
         <div id="scroll" class="scroll">
             <div class="scroll-down-dude"></div>
@@ -496,7 +496,7 @@
         <!-- Social Window -->
         <div id="socialWindow" class="container-fluid">
             <div class='row'>
-                <div id="blueBar" class='offset-3 col-6'></div>
+                <div id="blueBar" class='offset-3 col-6 offset-3'></div>
                 <div id="socialMedia" class='offset-3 col-6 offset-3 d-flex justify-content-around'>
                     <div class='p-2'><img src="images/social (1).png" alt=""
                             onclick="location.href = 'https://www.facebook.com/DeepRootsnightmarket/'"></div>
@@ -515,7 +515,26 @@
         </div>
     </div>
     <!-- Display on smaller screens -->
-    <div class='container-fluid d-lg-none'>
+    <div class='container-fluid d-lg-none bodyMobile'>
+            <span id="navMobile" class="navbuttonMobile" style="font-size:60px;cursor:pointer" onmouseover="openNav()">&#9776;</span>
+        <div id="navigationMobile" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onmouseover="closeNav()">&times;</a>
+            <a id="landingButtonMobile" class="optionMobile" href="#" style="color: #00f3e0"><img
+                    src="images/logoCircle.png">Home</a>
+            <a id="nightMarketButtonMobile" class="optionMobile" href="#"><img
+                    src="https://img.icons8.com/ios-glyphs/50/000000/partly-cloudy-night.png"> Night Market</a>
+            <a id="galleryButtonMobile" class="optionMobile" href="#"><img
+                    src="https://img.icons8.com/windows/50/000000/deciduous-tree.png">
+                Gallery</a>
+            <a id="aboutUsButtonMobile" class="optionMobile" href="#"><img src="https://img.icons8.com/windows/50/000000/nut.png">
+                About us</a>
+            <a id="contactButtonMobile" class="optionMobile" href="#"><img src="https://img.icons8.com/windows/50/000000/alien.png">
+                Contact</a>
+            <a id="socialButtonMobile" class="optionMobile" href="#"><img src="https://img.icons8.com/windows/48/000000/hashtag-large.png">
+                Social</a>
+            <a class="optionMobile" href="#"><img src="https://img.icons8.com/windows/50/000000/buy.png"> Shop (Coming
+                Soon)</a>
+        </div>
         <div id='landingMobile'>
             <svg id="logo" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2980 3200"
                 preserveAspectRatio="xMidYMid meet">
@@ -833,6 +852,25 @@
                     reiciendis nisi corporis, aliquam sed aperiam! Et repellat omnis officia mollitia in?</div>
             </div>
         </div>
+        <div id="socialWindowMobile">
+            <div class='row'>
+                <div id="blueBar" class='offset-3 col-6 offset-3'></div>
+                <div id="socialMedia" class='offset-3 col-6 offset-3 d-flex justify-content-center'>
+                    <div data-aos="fade-right" data-aos-duration="1500" class='p-2'><img src="images/social (1).png" alt=""
+                            onclick="location.href = 'https://www.facebook.com/DeepRootsnightmarket/'"></div>
+                    <div data-aos="fade-left" data-aos-duration="1500" class='p-2'><img src="images/social (3).png" alt=""
+                            onclick="location.href = 'https://www.instagram.com/deeprootsnightmarket/?hl=en'"></div>
+                    <div data-aos="fade-right" data-aos-duration="1500" class='p-2'><img src="images/social (4).png" alt=""
+                            onclick="location.href = 'https://za.linkedin.com/in/sheldon-crabtree-135a289b?trk=people-guest_profile-result-card_result-card_full-click'">
+                    </div>
+                </div>
+                <div id="details" class='offset-3 col-6 offset-3 text-center'>
+                    <a>Sheldon Crabtree</a><br>
+                    <a>Tel: +27 (0) 82 574 5757</a><br>
+                    <a></a>E-mail: sheldon@deeproots.co.za</a>
+                </div>
+            </div>
+        </div>
     </div>
     </div>
     <script src="js/jquery.min.js"></script>
@@ -859,9 +897,21 @@
             }, 1500);
             closeNav();
         })
+        $('#nightMarketButtonMobile').click(function () {
+            $('html,body').animate({
+                scrollTop: $('#introMobile').offset().top
+            }, 1500);
+            closeNav();
+        })
         $('#landingButton').click(function () {
             $('html,body').animate({
                 scrollTop: $('#bulb').offset().top
+            }, 1500);
+            closeNav();
+        })
+        $('#landingButtonMobile').click(function () {
+            $('html,body').animate({
+                scrollTop: $('#landingMobile').offset().top
             }, 1500);
             closeNav();
         })
@@ -871,9 +921,21 @@
             }, 1500);
             closeNav();
         })
+        $('#galleryButtonMobile').click(function () {
+            $('html,body').animate({
+                scrollTop: $('#galleryMobile').offset().top
+            }, 1500);
+            closeNav();
+        })
         $('#aboutUsButton').click(function () {
             $('html,body').animate({
                 scrollTop: $('#drCollective').offset().top
+            }, 1500);
+            closeNav();
+        })
+        $('#aboutUsButtonMobile').click(function () {
+            $('html,body').animate({
+                scrollTop: $('#treeWindowMobile').offset().top
             }, 1500);
             closeNav();
         })
@@ -883,9 +945,21 @@
             }, 1500);
             closeNav();
         })
+        $('#contactButtonMobile').click(function () {
+            $('html,body').animate({
+                scrollTop: $('#contactWindowMobile').offset().top
+            }, 1500);
+            closeNav();
+        })
         $('#socialButton').click(function () {
             $('html,body').animate({
                 scrollTop: $('#socialWindow').offset().top
+            }, 1500);
+            closeNav();
+        })
+        $('#socialButtonMobile').click(function () {
+            $('html,body').animate({
+                scrollTop: $('#socialWindowMobile').offset().top
             }, 1500);
             closeNav();
         })
